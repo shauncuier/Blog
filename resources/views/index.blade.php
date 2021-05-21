@@ -1,1 +1,11 @@
-<h1>hello</h1>
+@extends('layouts.app')
+@section('content')
+<div>
+    <div>
+        <div>
+            
+        </div>
+    </div>
+</div>
+@endsection
+
