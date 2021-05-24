@@ -69,7 +69,7 @@
         <div class="flex bg-yellow-700 text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class="text-xs uppercase">
-                    PHP
+                    {{ $post->title }}
                 </span>
                 <h3 class="text-xl font-bold py-10">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo amet rem iste nulla reprehenderit

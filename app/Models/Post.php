@@ -24,6 +24,6 @@ class Post extends Model
             'slug' => [
                 'sources' => 'title'
             ]
-            ];
+        ];
     }
 }

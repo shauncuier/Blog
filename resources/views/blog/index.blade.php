@@ -27,7 +27,7 @@
     @foreach ($posts as $post)
         <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
             <div>
-                <h2 class="font-bold italic text-gray-800">Image</h2>
+                <img src="{{ asset('images/'.$post->image_path) }}" alt="">
             </div>
             <div>
                 <h2 class="text-gray-700 font-bold text-5xl pb-4">
