@@ -27,7 +27,7 @@
     @foreach ($posts as $post)
         <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
             <div>
-                <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
+                <h2 class="font-bold italic text-gray-800">Image</h2>
             </div>
             <div>
                 <h2 class="text-gray-700 font-bold text-5xl pb-4">
@@ -44,6 +44,23 @@
                     class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                     Keep reading
                 </a>
+                @if (isset(Auth::user()->id) && Auth::user()->id == $post->user->id)
+                    <span class="float-right">
+                        <a href="/blog/{{ $post->slug }}/edit"
+                            class="text-gray-700 italic hover:text-gray-900 pb-1 border-b-2">
+                            Edit Post
+                        </a>
+                    </span>
+                    <span class="float-right">
+                        <form action="/blog/{{ $post->slug }}" method="post">
+                            @csrf
+                            @method('delete')
+                            <button class="text-red-500 pr-3" type="submit">
+                                Delete
+                            </button>
+                        </form>
+                    </span>
+                @endif
             </div>
         </div>
     @endforeach
