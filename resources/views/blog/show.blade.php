@@ -3,7 +3,7 @@
 @section('content')
     <div class="w-4/5 m-auto text-left">
         <div class="text-center">
-            <img class="h-48 w-full object-cover text-center md:h-full md:w-48 " src="{{ asset('images/'.$post->image_path) }}" alt="">
+            <img class="text-center" src="{{ asset('images/'.$post->image_path) }}" alt="">
         </div>
         <div class="py-15">
             <h1 class="text-4xl text-center">
