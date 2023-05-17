@@ -35,13 +35,13 @@
     {{-- Test --}}
 
 
-    {{-- <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
-        @method('PUT')
+    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+        {{-- @method('PUT') --}}
         @foreach ($posts as $post)
             <h2>{{ $post->title }}</h2>
         @endforeach
 
-    </div> --}}
+    </div>
     {{-- Test End --}}
     <div class="text-center p-15 bg-black text-white">
         <h2 class="text-2xl pb-5 text-l">
