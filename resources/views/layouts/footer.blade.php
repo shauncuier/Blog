@@ -63,6 +63,6 @@
         </div>
     </div>
     <p class="w-25 w-4/5 pb-3 m-auto text-xs text-gray-100 pt-6 text-center">
-        Copyright &copy; 2021 | <a href="3s-soft.com">3s-Soft</a> | All Rights reserved
+        Copyright &copy; {{date("Y")}} | <a href="3s-soft.com">3s-Soft</a> | All Rights reserved
     </p>
 </footer>

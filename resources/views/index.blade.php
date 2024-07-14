@@ -36,10 +36,10 @@
 
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
-        {{-- @method('PUT') --}}
-        @foreach ($posts as $post)
-            <h2>{{ $post->title }}</h2>
-        @endforeach
+{{--         @method('PUT')--}}
+{{--        @foreach ($posts as $post)--}}
+{{--            <h2>{{ $post->title }}</h2>--}}
+{{--        @endforeach--}}
 
     </div>
     {{-- Test End --}}
@@ -80,7 +80,8 @@
         <div class="flex bg-yellow-700 text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class="text-xs uppercase">
-                    {{-- {{ $post->title }} --}}
+{{--                     {{ $post->title }}--}}
+
                 </span>
                 <h3 class="text-xl font-bold py-10">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo amet rem iste nulla reprehenderit
